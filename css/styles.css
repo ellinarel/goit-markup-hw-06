@@ -45,7 +45,18 @@ html {
 .page-header{
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
  .container {
     width: 1200px;
     padding-left: 15px;
@@ -285,8 +296,109 @@ main .container{
     background:var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px 39px 40px 41px;
    
 }
+
+.modal-caption{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+    margin-bottom: 12px;
+}
+.form-label{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color); 
+    padding-bottom: 4px;
+    padding-top: 10px;
+    
+}
+
+.form-comment{
+    width: 100%;
+    height: 120px;
+    height: 120px;
+    padding: 12px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.form-comment:focus{
+    border-color: var(--accent-color);
+}
+.form-control{
+position: relative;
+
+}
+.form-input{
+width: 100%;
+padding: 12px 12px 12px 42px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: none;
+
+}
+.form-input:focus{
+    border-color: var(--accent-color);
+}
+
+.form-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+
+.form-control:focus-within .form-icon{
+    fill: var(--accent-color);
+}
+.checkbox-input{
+    appearance: none;
+  
+}
+
+.checkbox-label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    padding-left: 8px ;
+}
+
+/*
+.checkbox-icon-border{
+    width: 16px;
+    height: 15px;
+   border: 2px solid;
+   border-radius: 2px;
+}
+*/
+.checkbox-input:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+}
+.checkbox-icon{
+    width: 16px;
+    height: 15px;
+    fill: var(--background-color);
+    border: 2px solid;
+    border-radius: 2px;
+}
+.checkbox-input:checked + .checkbox-icon {
+    background-color: var(--accent-color);
+}
+
+
 .close-button{
     display: flex;
     justify-content: center;
