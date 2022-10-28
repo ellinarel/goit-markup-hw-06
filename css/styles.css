@@ -335,6 +335,9 @@ main .container{
     border-radius: 4px;
     outline: none;
     margin-bottom: 20px;
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-comment:focus{
     border-color: var(--accent-color);
@@ -351,6 +354,9 @@ padding: 11px 12px 11px 42px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
+transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .form-input:focus{
@@ -363,6 +369,9 @@ outline: none;
     left: 12px;
     transform: translateY(-50%);
     fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-control:focus-within .form-icon{
@@ -402,6 +411,10 @@ outline: none;
     fill: var(--background-color);
     border: 2px solid;
     border-radius: 2px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     
 }
 .checkbox-input:checked ~ .checkbox-icon {
@@ -431,6 +444,9 @@ outline: none;
         padding: 10px 52px 10px 52px ;
         border:none ;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-modal:focus{
     background-color: var(--herobuttonactive);
@@ -954,6 +970,9 @@ height: 92px;
     padding-bottom: 15px;
     padding-left: 16px;
     outline: none;
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input:focus{
     border-color: var(--accent-color);
@@ -980,6 +999,9 @@ height: 92px;
     line-height: 1.9px;
     letter-spacing: 0.06em;
     fill: var(--background-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .footer-btn-send:hover,
