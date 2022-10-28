@@ -820,7 +820,7 @@ height: 92px;
 
 }
 .footerbox-one + .footerbox-two{
-    margin-left: 70px;
+    margin-left: 93px;
 
 }
  .container{
@@ -981,6 +981,10 @@ height: 92px;
     letter-spacing: 0.06em;
     fill: var(--background-color);
 
+}
+.footer-btn-send:hover,
+.footer-btn-send:focus{
+    background-color: var(--herobuttonactive);
 }
 
 .buttonlist {
