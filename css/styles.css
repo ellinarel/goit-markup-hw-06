@@ -308,7 +308,7 @@ main .container{
     letter-spacing: 0.03em;
     color: var(--tittle-text-color);
     margin-bottom: 12px;
-    margin-top: 2px;
+    
 }
 .form-label{
     display: block;
@@ -317,12 +317,12 @@ main .container{
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--primary-text-color); 
-    padding-bottom: 4px;
-    padding-top: 10px;
+    margin-bottom: 4px;
+    margin-top: 10px;
     
 }
 .first-label{
-    padding-top: 0;
+    margin-top: 0;
 }
 
 
@@ -334,17 +334,21 @@ main .container{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    margin-bottom: 20px;
     transition-property: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-comment:focus{
     border-color: var(--accent-color);
 }
 .form-control{
 position: relative;
+}
 
+.form-comment-thumb{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .form-input{
 
@@ -355,8 +359,8 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
 transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .form-input:focus{
@@ -429,7 +433,7 @@ transition-property: border-color;
     justify-content: center;
 }
 .btn-modal{
-        position: absolute;
+        
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
@@ -465,12 +469,15 @@ transition-property: border-color;
     border-radius: 50%;
     background-color: var(--background-color);
     cursor: pointer;
+    fill: var(--logocolor);
 
   
 }
-.closebtn{
-    fill: var(--logocolor);
+.close-button:hover,
+ .close-button:focus{
+    fill: var(--accent-color);
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
